@@ -12,7 +12,7 @@
         <a class="nav-link-underline font-label-bold text-label-bold uppercase text-on-surface-variant dark:text-on-surface-variant hover:text-primary transition-colors duration-300"
             href="trending.php">Trending</a>
         <a class="nav-link-underline font-label-bold text-label-bold uppercase text-on-surface-variant dark:text-on-surface-variant hover:text-primary transition-colors duration-300"
-            href="#">Categories</a>
+            href="indexcategory.php">Categories</a>
         <a class="nav-link-underline font-label-bold text-label-bold uppercase text-on-surface-variant dark:text-on-surface-variant hover:text-primary transition-colors duration-300"
             href="live-scores.php">Live Score</a>
     </div>

@@ -1,0 +1,114 @@
+[
+  {
+    "id": 1,
+    "title": "Manchester City Seals Historic Fifth Consecutive Premier League Title",
+    "category": "premier league",
+    "trending": "yes",
+    "isi": "Manchester City has secured their fifth consecutive Premier League title after an intense final day drama, defeating West Ham United. Erling Haaland led the scoring charts once again, netting a remarkable 35 goals this season. Pep Guardiola praised his squad's relentless work ethic and tactical resilience, solidifying their status as one of the greatest football teams in English history.",
+    "img": "https://images.unsplash.com/photo-1508098682722-e99c43a406b2?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    "id": 2,
+    "title": "Arsenal's Tactical Evolution: How Arteta Refined the Gunners for Title Race",
+    "category": "premier league",
+    "trending": "no",
+    "isi": "Under Mikel Arteta, Arsenal has evolved into a defensive powerhouse while maintaining fluid attacking transitions. The addition of key players in the midfield has allowed the Gunners to control possession against high-pressing teams. Although they finished a close second to Manchester City, their progress suggests a bright future and an imminent silverware charge next season.",
+    "img": "https://images.unsplash.com/photo-1579952362224-303b764a3ac9?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    "id": 3,
+    "title": "Real Madrid’s New Galactico Era: Kylian Mbappé Shines on El Clásico Debut",
+    "category": "laliga",
+    "trending": "yes",
+    "isi": "Real Madrid started a new Galactico era as Kylian Mbappé put on a masterclass performance in his first El Clásico at the Santiago Bernabéu. Scoring a brilliant brace and assisting Jude Bellingham, Mbappé proved to be the difference maker in a thrilling 3-1 victory over rivals Barcelona. Carlo Ancelotti highlighted Mbappé's instant integration and clinical nature in big matches.",
+    "img": "https://images.unsplash.com/photo-1517649763962-0c623066013b?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    "id": 4,
+    "title": "Lamine Yamal: The Prodigy Redefining Barcelona’s Future and Philosophy",
+    "category": "laliga",
+    "trending": "no",
+    "isi": "At just 18, Lamine Yamal continues to capture the footballing world's imagination. Leading Barcelona's attack with maturity beyond his years, Yamal has become the focal point of Hansi Flick's setup. With incredible dribbling and vision, the La Masia graduate is heralded as the heir to Lionel Messi's legacy, bringing joy back to the Camp Nou faithful.",
+    "img": "https://images.unsplash.com/photo-1540747737956-378725848ecb?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    "id": 5,
+    "title": "Bayer Leverkusen's Invincibles Style: Alonso Continues to Defy the Odds",
+    "category": "bundesliga",
+    "trending": "yes",
+    "isi": "Xabi Alonso's Bayer Leverkusen continues to play their trademark high-tempo possession football, capturing the hearts of Bundesliga fans. Securing another key win against Bayern Munich at the BayArena, they proved their previous title was no fluke. Alonso's tactical adaptability and the emergence of Florian Wirtz keep Leverkusen at the absolute peak of German football.",
+    "img": "https://images.unsplash.com/photo-1522778119026-d647f0596c20?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    "id": 6,
+    "title": "Harry Kane Leads Bayern Munich's Charge to Reclaim Bundesliga Supremacy",
+    "category": "bundesliga",
+    "trending": "no",
+    "isi": "Bayern Munich's star striker Harry Kane is on a mission to bring the Bundesliga shield back to Allianz Arena. Scoring a hat-trick in the latest Bavarian derby, Kane has reached 30 goals in record time. Head coach Vincent Kompany stated that Kane's leadership and hold-up play are critical to breaking down deep defensive blocks in the league.",
+    "img": "https://images.unsplash.com/photo-1551958219-acbc608c6377?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    "id": 7,
+    "title": "Inter Milan Dominates Derby della Madonnina to Secure Serie A Scudetto",
+    "category": "serie a",
+    "trending": "yes",
+    "isi": "Inter Milan painted the San Siro blue and black after a convincing 3-0 victory against AC Milan, sealing the Serie A Scudetto with games to spare. Lautaro Martinez scored twice, demonstrating why he is regarded as one of Europe's top forwards. Simone Inzaghi celebrated his tactical victory, dedicating the title to the passionate Nerazzurri supporters.",
+    "img": "https://images.unsplash.com/photo-1516246843873-9d12356b6ffd?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    "id": 8,
+    "title": "Juventus Rebuilds: Thiago Motta's Tactical Revolution in Turin",
+    "category": "serie a",
+    "trending": "no",
+    "isi": "Juventus is entering an exciting new era under Thiago Motta. Implementing a fluid, possession-oriented style, Motta has integrated several youngsters from the Next Gen squad into the first team. The Bianconeri are playing some of their most attractive football in years, making them strong contenders for the Scudetto and European campaigns.",
+    "img": "https://images.unsplash.com/photo-1518063319789-7217e6706b04?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    "id": 9,
+    "title": "PSG Clinches Ligue 1 Title with Young Squad Under Luis Enrique",
+    "category": "ligue 1",
+    "trending": "yes",
+    "isi": "Paris Saint-Germain clinched the Ligue 1 title with a stellar 4-1 victory over Lyon. Under the guidance of Luis Enrique, PSG has transitioned into a cohesive team unit rather than relying on individual superstars. The club's focus on nurturing young talents like Warren Zaïre-Emery has paid off handsomely, securing domestic dominance once again.",
+    "img": "https://images.unsplash.com/photo-1431324155629-1a6edd1dec8d?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    "id": 10,
+    "title": "AS Monaco Secures Champions League Spot After Stellar Season Finish",
+    "category": "ligue 1",
+    "trending": "no",
+    "isi": "AS Monaco booked their place in next season's UEFA Champions League with a hard-fought 2-1 win over Marseille. Denis Zakaria's late header proved crucial in a high-stakes match at Stade Louis II. The club's hierarchy praised the players' mental strength and consistency during the final stretch of the league campaign.",
+    "img": "https://images.unsplash.com/photo-1624887009213-02102dc8719b?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    "id": 11,
+    "title": "Road to 2026 World Cup: The Underdogs Making Waves in the Qualifiers",
+    "category": "world cup",
+    "trending": "no",
+    "isi": "As the road to the FIFA World Cup 2026 heats up, several lower-ranked nations are defying expectations in continental qualifiers. Surprising victories and tactical masterclasses have blown their respective groups wide open, promising one of the most diverse and competitive World Cup tournaments in history across the USA, Canada, and Mexico.",
+    "img": "https://images.unsplash.com/photo-1508098682722-e99c43a406b2?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    "id": 12,
+    "title": "World Cup 2026 Stadiums: A First Look at the Ultra-Modern Venues",
+    "category": "world cup",
+    "trending": "no",
+    "isi": "The stadiums selected for the 2026 FIFA World Cup represent the absolute pinnacle of architecture and sports technology. From retractable roofs to state-of-the-art turf management and giant LED screens, host cities are ready to welcome millions of fans. Security, accessibility, and environmental sustainability remain top priorities for organizers.",
+    "img": "https://images.unsplash.com/photo-1522778119026-d647f0596c20?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    "id": 13,
+    "title": "UEFA Champions League Final: Real Madrid Clashes with Manchester City",
+    "category": "uefa champions league",
+    "trending": "yes",
+    "isi": "The ultimate showdown in European club football is set: Real Madrid will lock horns with Manchester City in the UEFA Champions League Final. Both sides reached the summit after thrilling semi-final victories. Fans expect a classic battle between Madrid's European pedigree and City's tactical precision at Wembley Stadium.",
+    "img": "https://images.unsplash.com/photo-1551958219-acbc608c6377?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    "id": 14,
+    "title": "The Evolution of European Football: How High Pressing Has Transformed Champions League",
+    "category": "uefa champions league",
+    "trending": "no",
+    "isi": "A tactical analysis of recent Champions League seasons reveals a massive shift towards aggressive high-pressing systems. Teams are no longer content with sitting deep; instead, managers demand immediate counter-pressing to win the ball back in the opposition half. This evolution has led to higher-scoring games and a faster tempo overall.",
+    "img": "https://images.unsplash.com/photo-1579952362224-303b764a3ac9?auto=format&fit=crop&w=800&q=80"
+  }
+]
