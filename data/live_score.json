@@ -1,0 +1,62 @@
+[
+    {
+        "status": "LIVE",
+        "time": "78'",
+        "league": "Premier League",
+        "team1": {
+            "name": "Man City",
+            "score": "2",
+            "logo": "logo/mancity.svg"
+        },
+        "team2": {
+            "name": "Arsenal",
+            "score": "2",
+            "logo": "logo/arsenal.svg"
+        }
+    },
+    {
+        "status": "HT",
+        "time": "",
+        "league": "La Liga",
+        "team1": {
+            "name": "Real Madrid",
+            "score": "1",
+            "logo": "logo/realmadrid.svg"
+        },
+        "team2": {
+            "name": "Barcelona",
+            "score": "0",
+            "logo": "logo/barcelona.svg"
+        }
+    },
+    {
+        "status": "LIVE",
+        "time": "12'",
+        "league": "Serie A",
+        "team1": {
+            "name": "Inter Milan",
+            "score": "0",
+            "logo": "logo/intermilan.svg"
+        },
+        "team2": {
+            "name": "AC Milan",
+            "score": "0",
+            "logo": "logo/acmilan.svg"
+        }
+    },
+    {
+        "status": "Coming Up",
+        "time": "",
+        "league": "Bundesliga",
+        "team1": {
+            "name": "Bayern",
+            "score": "-",
+            "logo": "logo/bayern.svg"
+        },
+        "team2": {
+            "name": "Dortmund",
+            "score": "-",
+            "logo": "logo/dortmund.svg"
+        }
+    }
+]

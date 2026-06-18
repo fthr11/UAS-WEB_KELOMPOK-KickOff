@@ -39,6 +39,18 @@ function get_trending_news() {
 }
 
 /**
+ * Fetches all popular news articles.
+ * 
+ * @return array List of popular articles
+ */
+function get_popular_news() {
+    $news = get_all_news();
+    return array_values(array_filter($news, function($item) {
+        return isset($item['popular']) && ($item['popular'] === true || strtolower($item['popular']) === 'true');
+    }));
+}
+
+/**
  * Fetches an article by its unique ID.
  * 
  * @param int|string $id The ID of the article
@@ -52,5 +64,25 @@ function get_news_by_id($id) {
         }
     }
     return null;
+}
+
+/**
+ * Parse a JSON string into a PHP array, similar to JSON.parse()
+ * 
+ * @param string $jsonString
+ * @return array
+ */
+function json_parse($jsonString) {
+    return json_decode($jsonString, true) ?: [];
+}
+
+/**
+ * Stringify a PHP array into a JSON string, similar to JSON.stringify()
+ * 
+ * @param mixed $data
+ * @return string
+ */
+function json_stringify($data) {
+    return json_encode($data, JSON_PRETTY_PRINT);
 }
 ?>
