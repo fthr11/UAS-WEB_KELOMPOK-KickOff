@@ -4,6 +4,14 @@ require_once 'data/loader.php';
 // Get the article ID from the query parameter
 $id = isset($_GET['id']) ? (int)$_GET['id'] : 0;
 $article = get_news_by_id($id);
+
+if ($article) {
+    // Estimate reading time dynamically
+    $loremText = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Curabitur pretium tincidunt lacus. Nulla gravida orci a odio. Nullam varius, turpis et commodo pharetra, est eros bibendum elit, nec luctus magna felis sollicitudin mauris. Integer in mauris eu nibh euismod gravida. Duis ac tellus et risus vulputate vehicula. Donec lobortis risus a elit. Etiam tempor. Ut ullamcorper, ligula eu tempor congue, eros est euismod turpis, id tincidunt sapien risus a quam. Maecenas fermentum consequat mi. Donec fermentum. Pellentesque malesuada nulla a mi. Duis sapien sem, aliquet nec, commodo eget, ut, gravida quis, arcu. Sunt in culpa qui officia deserunt mollit anim id est laborum. Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.";
+    $totalContent = $article['title'] . ' ' . $article['isi'] . ' ' . $loremText;
+    $wordCount = str_word_count(strip_tags($totalContent));
+    $estMinRead = max(1, (int)ceil($wordCount / 200)); // 200 words per minute average reading speed, minimum 1 min
+}
 ?>
 <!DOCTYPE html>
 <html class="dark" lang="en">
@@ -47,13 +55,22 @@ $article = get_news_by_id($id);
                 </h1>
 
                 <!-- Article Meta -->
-                <div class="flex items-center gap-4 border-b border-outline-variant pb-8 mb-8 text-on-surface-variant font-label-bold text-label-sm uppercase">
+                <div class="flex flex-wrap items-center gap-x-4 gap-y-2 border-b border-outline-variant pb-8 mb-8 text-on-surface-variant font-label-bold text-label-sm uppercase">
                     <span>By SportNews Editorial Team</span>
                     <span>•</span>
-                    <span>Published Today</span>
+                    <span>Published <?= isset($article['date']) ? date("F j, Y", strtotime($article['date'])) : 'Today' ?></span>
                     <span>•</span>
                     <span class="text-primary flex items-center gap-1">
-                        <span class="material-symbols-outlined text-sm">schedule</span> 4 min read
+                        <span class="material-symbols-outlined text-sm">schedule</span> 
+                        
+                    </span>
+                    <span>•</span>
+                    <span id="time-spent-badge" class="bg-surface-container-high border border-outline-variant text-on-surface px-2.5 py-1 flex items-center gap-2 normal-case font-medium text-[11px]">
+                        <span class="relative flex h-2 w-2">
+                            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
+                            <span class="relative inline-flex rounded-full h-2 w-2 bg-green-500"></span>
+                        </span>
+                        <span>Reading for <span id="active-read-time" class="font-bold">0 sec</span></span>
                     </span>
                 </div>
 
@@ -102,6 +119,41 @@ $article = get_news_by_id($id);
 
     <?php include 'components/footer.php'; ?>
     <?php include 'components/scripts.php'; ?>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const activeReadTimeEl = document.getElementById('active-read-time');
+            const articleId = <?= json_encode($id) ?>;
+            
+            if (activeReadTimeEl && articleId) {
+                // Function to format the duration
+                function formatReadTime(s) {
+                    if (s < 60) return `${s} sec`;
+                    const h = Math.floor(s / 3600);
+                    const m = Math.floor((s % 3600) / 60);
+                    const remainingSec = s % 60;
+                    
+                    let parts = [];
+                    if (h > 0) parts.push(`${h} h`);
+                    if (m > 0) parts.push(`${m} min`);
+                    if (remainingSec > 0) parts.push(`${remainingSec} sec`);
+                    return parts.join(' ');
+                }
+
+                // Load from localStorage
+                let seconds = parseInt(localStorage.getItem('read_time_article_' + articleId) || '0', 10);
+                
+                // Initialize display immediately to avoid flicker
+                activeReadTimeEl.textContent = formatReadTime(seconds);
+                
+                // Update every second and save
+                setInterval(() => {
+                    seconds++;
+                    localStorage.setItem('read_time_article_' + articleId, seconds);
+                    activeReadTimeEl.textContent = formatReadTime(seconds);
+                }, 1000);
+            }
+        });
+    </script>
 </body>
 
 </html>
