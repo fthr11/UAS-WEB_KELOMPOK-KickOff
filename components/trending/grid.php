@@ -13,15 +13,7 @@ $trending_news = get_trending_news();
         <div class="grid grid-cols-12 gap-gutter">
             <?php foreach ($trending_news as $news): ?>
             <!-- Trending Item -->
-            <a href="news-detail.php?id=<?= $news['id'] ?>" class="col-span-12 md:col-span-4 group cursor-pointer trending-card mb-8 block text-background hover:no-underline">
-                <div class="aspect-video bg-gray-100 mb-6 relative overflow-hidden shadow-sm">
-                    <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                        src="<?= htmlspecialchars($news['img']) ?>" alt="<?= htmlspecialchars($news['title']) ?>">
-                </div>
-                <span class="opacity-70 font-label-bold text-label-sm uppercase mb-2 block"><?= htmlspecialchars($news['category']) ?></span>
-                <h3 class="font-headline-md text-headline-md mb-4 group-hover:underline"><?= htmlspecialchars($news['title']) ?></h3>
-                <p class="font-body-md text-body-md opacity-70 mb-6 line-clamp-3"><?= htmlspecialchars($news['isi']) ?></p>
-            </a>
+            <?php include 'components/card.php'; ?>
             <?php endforeach; ?>
         </div>
     </div>
